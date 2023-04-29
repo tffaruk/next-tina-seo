@@ -1,7 +1,12 @@
 import React from "react";
+import { NextTinaSeo } from "../src";
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <>
+      <NextTinaSeo title="title" />
+    </>
+  );
 };
 
 export default Home;

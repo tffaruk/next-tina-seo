@@ -22,7 +22,8 @@
   },
   "scripts": {
     "build": "next build && babel src --out-dir dist --copy-files",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
