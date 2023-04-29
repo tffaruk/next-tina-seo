@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import config from "../config.json";
 import { plainify } from "../textConverter";
+import React from "react";
 const NextTinaSeo = ({
   title,
   meta_title,
