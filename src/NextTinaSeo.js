@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import React from "react";
 
 const NextTinaSeo = ({
@@ -13,7 +13,7 @@ const NextTinaSeo = ({
   canonical,
   base_url,
 }) => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <Head>
       {/* title */}
@@ -40,10 +40,10 @@ const NextTinaSeo = ({
       {/* og-description */}
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta
+      {/* <meta
         property="og:url"
         content={`${base_url}/${router.asPath.replace("/", "")}`}
-      />
+      /> */}
 
       {/* twitter-title */}
       <meta name="twitter:title" content={meta_title ? meta_title : title} />
@@ -52,16 +52,16 @@ const NextTinaSeo = ({
       <meta name="twitter:description" content={description} />
 
       {/* og-image */}
-      <meta
+      {/* <meta
         property="og:image"
         content={`${base_url}${image ? image : meta_image}`}
-      />
+      /> */}
 
       {/* twitter-image */}
-      <meta
+      {/* <meta
         name="twitter:image"
         content={`${base_url}${image ? image : meta_image}`}
-      />
+      /> */}
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );

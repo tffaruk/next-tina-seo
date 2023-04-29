@@ -5,9 +5,10 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _head = _interopRequireDefault(require("next/head"));
-var _router = require("next/router");
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+// import { useRouter } from "next/router";
+
 var NextTinaSeo = function NextTinaSeo(_ref) {
   var title = _ref.title,
     meta_title = _ref.meta_title,
@@ -18,7 +19,7 @@ var NextTinaSeo = function NextTinaSeo(_ref) {
     noindex = _ref.noindex,
     canonical = _ref.canonical,
     base_url = _ref.base_url;
-  var router = (0, _router.useRouter)();
+  // const router = useRouter();
   return /*#__PURE__*/_react["default"].createElement(_head["default"], null, /*#__PURE__*/_react["default"].createElement("title", null, title), canonical && /*#__PURE__*/_react["default"].createElement("link", {
     rel: "canonical",
     href: canonical,
@@ -42,20 +43,11 @@ var NextTinaSeo = function NextTinaSeo(_ref) {
     property: "og:type",
     content: "website"
   }), /*#__PURE__*/_react["default"].createElement("meta", {
-    property: "og:url",
-    content: "".concat(base_url, "/").concat(router.asPath.replace("/", ""))
-  }), /*#__PURE__*/_react["default"].createElement("meta", {
     name: "twitter:title",
     content: meta_title ? meta_title : title
   }), /*#__PURE__*/_react["default"].createElement("meta", {
     name: "twitter:description",
     content: description
-  }), /*#__PURE__*/_react["default"].createElement("meta", {
-    property: "og:image",
-    content: "".concat(base_url).concat(image ? image : meta_image)
-  }), /*#__PURE__*/_react["default"].createElement("meta", {
-    name: "twitter:image",
-    content: "".concat(base_url).concat(image ? image : meta_image)
   }), /*#__PURE__*/_react["default"].createElement("meta", {
     name: "twitter:card",
     content: "summary_large_image"
