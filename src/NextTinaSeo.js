@@ -1,6 +1,5 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import React from "react";
 import config from "../config.json";
 import { plainify } from "../textConverter";
 const NextTinaSeo = ({
