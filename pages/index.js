@@ -1,26 +1,21 @@
+import NextTinaSeo from "@layouts/NextTinaSeo";
 import config from "@config/config.json";
 import Base from "@layouts/Baseof";
-import Post from "@layouts/components/Post";
 import { getListPage, getSinglePage } from "@lib/contentParser";
-import { sortByDate } from "@lib/utils/sortFunctions";
 import { markdownify } from "@lib/utils/textConverter";
 const { blog_folder } = config.settings;
 
 const Home = ({ banner, posts, authors }) => {
-  const sortPostByDate = sortByDate(posts);
-  const showPost = 4;
+
 
   return (
     <Base>
+    <NextTinaSeo title="this is title" />
       <div className="section">
         <div className="container">
           {markdownify(banner.title, "h1", "h2 mb-8 text-center")}
           <div className="row">
-            {sortPostByDate.slice(0, showPost).map((post, i) => (
-              <div key={`key-${i}`} className="col-12 mb-8 sm:col-6">
-                <Post post={post} authors={authors} />
-              </div>
-            ))}
+
           </div>
         </div>
       </div>

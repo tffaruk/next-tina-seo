@@ -1,9 +1,9 @@
 {
-  "name": "next-tailwind-boilerplate",
+  "name": "next-tina-seo",
   "description": "a nextjs and tailwindcss boilerplate by themefisher.com",
   "version": "1.2.7",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "dev": "node scripts/jsonGenerator.js && next dev",
     "build": "node scripts/jsonGenerator.js && next build",
@@ -44,5 +44,21 @@
     "sharp": "^0.32.0",
     "tailwind-bootstrap-grid": "^5.0.1",
     "tailwindcss": "^3.3.1"
-  }
+  },
+  "main": "next.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tffaruk/next-tina-seo.git"
+  },
+  "files": [
+    "layouts"
+  ],
+  "author": "themefisher",
+  "bugs": {
+    "url": "https://github.com/tffaruk/next-tina-seo/issues"
+  },
+  "homepage": "https://github.com/tffaruk/next-tina-seo#readme"
 }
