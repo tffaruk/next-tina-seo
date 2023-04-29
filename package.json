@@ -6,8 +6,8 @@
   },
   "name": "next-tina-seo-demo",
   "version": "1.0.0",
-  "main": "dist/my-nextjs-package.js",
-  "module": "dist/my-nextjs-package.js",
+  "main": "dist/NextTinaSeo.js",
+  "module": "dist/NextTinaSeo.js",
   "devDependencies": {
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
