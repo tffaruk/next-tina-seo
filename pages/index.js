@@ -4,7 +4,7 @@ import { NextTinaSeo } from "../src";
 const Home = () => {
   return (
     <>
-      <NextTinaSeo title="title" />
+      <NextTinaSeo />
     </>
   );
 };
