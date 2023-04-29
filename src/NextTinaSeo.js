@@ -1,4 +1,3 @@
-import { plainify } from "@lib/utils/textConverter";
 import Head from "next/head";
 import React from "react";
 
@@ -14,9 +13,7 @@ const NextTinaSeo = ({
   return (
     <Head>
       {/* title */}
-      <title>
-        {plainify(meta_title ? meta_title : title ? title : config.site.title)}
-      </title>
+      <title>{title}</title>
 
       {/* canonical url */}
       {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
@@ -34,12 +31,7 @@ const NextTinaSeo = ({
       {/* <meta name="author" content={meta_author} /> */}
 
       {/* og-title */}
-      <meta
-        property="og:title"
-        content={plainify(
-          meta_title ? meta_title : title ? title : config.site.title
-        )}
-      />
+      <meta property="og:title" content={title} />
 
       {/* og-description */}
       {/* <meta
@@ -55,9 +47,7 @@ const NextTinaSeo = ({
       {/* twitter-title */}
       <meta
         name="twitter:title"
-        content={plainify(
-          meta_title ? meta_title : title ? title : config.site.title
-        )}
+        content={title}
       />
 
       {/* twitter-description */}
