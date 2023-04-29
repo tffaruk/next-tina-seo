@@ -4,7 +4,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "name": "next-tina-seo",
+  "name": "next-tina-seo-demo",
   "version": "1.0.0",
   "main": "dist/my-nextjs-package.js",
   "module": "dist/my-nextjs-package.js",
