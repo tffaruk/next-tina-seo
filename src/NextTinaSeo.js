@@ -1,25 +1,25 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
-import config from "../config.json";
-import { plainify } from "../textConverter";
 import React from "react";
+
 const NextTinaSeo = ({
   title,
   meta_title,
+  meta_author,
+  meta_image,
   description,
   image,
   noindex,
   canonical,
+  base_url,
 }) => {
-  const { meta_image, meta_author, meta_description } = config.metadata;
-  const { base_url } = config.site;
   const router = useRouter();
-
   return (
     <Head>
       {/* title */}
       <title>
-        {plainify(meta_title ? meta_title : title ? title : config.site.title)}
+        {title}
+        {/* {meta_title ? meta_title : title ? title : config.site.title)} */}
       </title>
 
       {/* canonical url */}
@@ -29,22 +29,16 @@ const NextTinaSeo = ({
       {noindex && <meta name="robots" content="noindex,nofollow" />}
 
       {/* meta-description */}
-      <meta
-        name="description"
-        content={plainify(description ? description : meta_description)}
-      />
+      <meta name="description" content={description} />
 
       {/* author from config.json */}
       <meta name="author" content={meta_author} />
 
       {/* og-title */}
-      <meta property="og:title" content={title} />
+      <meta property="og:title" content={meta_title ? meta_title : title} />
 
       {/* og-description */}
-      <meta
-        property="og:description"
-        content={plainify(description ? description : meta_description)}
-      />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
@@ -52,13 +46,10 @@ const NextTinaSeo = ({
       />
 
       {/* twitter-title */}
-      <meta name="twitter:title" content={title} />
+      <meta name="twitter:title" content={meta_title ? meta_title : title} />
 
       {/* twitter-description */}
-      <meta
-        name="twitter:description"
-        content={plainify(description ? description : meta_description)}
-      />
+      <meta name="twitter:description" content={description} />
 
       {/* og-image */}
       <meta
