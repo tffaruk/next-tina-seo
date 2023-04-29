@@ -31,5 +31,6 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx"],
+    alias:{'next/router': path.resolve(__dirname, 'node_modules/next/router'),}
   },
 };
