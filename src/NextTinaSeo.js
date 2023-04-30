@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 // import { useRouter } from "next/router";
 import React from "react";
 
@@ -12,8 +13,8 @@ const NextTinaSeo = ({
   noindex,
   canonical,
   base_url,
-  router,
 }) => {
+  const router = useRouter();
   return (
     <Head>
       {/* title */}

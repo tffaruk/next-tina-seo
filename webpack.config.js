@@ -30,7 +30,27 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"],
-    alias:{'next/router': path.resolve(__dirname, 'node_modules/next/router'),}
+    extensions: ['.js', '.jsx'],
+    alias: {
+      react: path.resolve(__dirname, './node_modules/react'),
+      'react-dom': path.resolve(__dirname, './node_modules/react-dom'),
+      'next/router': path.resolve(__dirname, './node_modules/next/dist/client/router'),
+    },
+  },
+  externals: {
+    react: {
+      commonjs: 'react',
+      commonjs2: 'react',
+      amd: 'React',
+      root: 'React',
+    },
+    'react-dom': {
+      commonjs: 'react-dom',
+      commonjs2: 'react-dom',
+      amd: 'ReactDOM',
+      root: 'ReactDOM',
+    },
+    'next/router': 'next/router',
   },
 };
+
