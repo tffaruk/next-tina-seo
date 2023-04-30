@@ -38,7 +38,7 @@ const NextTinaSeo = ({
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
-        content={`${base_url}/${url_path.replace("/", "")}`}
+        content={`${base_url}/${url_path?.replace("/", "")}`}
       />
 
       {/* twitter-title */}
