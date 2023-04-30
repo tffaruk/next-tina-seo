@@ -17,10 +17,7 @@ const NextTinaSeo = ({
   return (
     <Head>
       {/* title */}
-      <title>
-        {title}
-        {/* {meta_title ? meta_title : title ? title : config.site.title)} */}
-      </title>
+      <title>{meta_title ? meta_title : title}</title>
 
       {/* canonical url */}
       {canonical && <link rel="canonical" href={canonical} itemProp="url" />}

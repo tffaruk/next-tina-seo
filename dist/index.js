@@ -9,5 +9,12 @@ Object.defineProperty(exports, "NextTinaSeo", {
     return _NextTinaSeo["default"];
   }
 });
+Object.defineProperty(exports, "router", {
+  enumerable: true,
+  get: function get() {
+    return _router["default"];
+  }
+});
 var _NextTinaSeo = _interopRequireDefault(require("./NextTinaSeo"));
+var _router = _interopRequireDefault(require("./router"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
