@@ -15,6 +15,6 @@ Object.defineProperty(exports, "router", {
     return _router["default"];
   }
 });
-var _NextTinaSeo = _interopRequireDefault(require("./NextTinaSeo"));
 var _router = _interopRequireDefault(require("./router"));
+var _NextTinaSeo = _interopRequireDefault(require("./NextTinaSeo"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }

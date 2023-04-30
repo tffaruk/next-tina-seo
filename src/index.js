@@ -1,2 +1,3 @@
+import router from "./router";
 export { default as NextTinaSeo } from "./NextTinaSeo";
-export { default as router } from "./router";
+export { router };
