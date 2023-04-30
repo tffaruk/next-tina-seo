@@ -1,6 +1,4 @@
 import Head from "next/head";
-import { useRouter } from "next/router";
-// import { useRouter } from "next/router";
 import React from "react";
 
 const NextTinaSeo = ({
@@ -13,8 +11,8 @@ const NextTinaSeo = ({
   noindex,
   canonical,
   base_url,
+  url_path,
 }) => {
-  const router = useRouter();
   return (
     <Head>
       {/* title */}
@@ -40,7 +38,7 @@ const NextTinaSeo = ({
       <meta property="og:type" content="website" />
       <meta
         property="og:url"
-        content={`${base_url}/${router?.asPath.replace("/", "")}`}
+        content={`${base_url}/${url_path.replace("/", "")}`}
       />
 
       {/* twitter-title */}

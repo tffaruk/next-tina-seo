@@ -1,11 +1,11 @@
-# Next Tina Seow
+# Next Tina Seo
 
 ## Dependency
 
 - node v18+
 - npm v9+
 - next v13+
-- tailwind v3+
+
 
 ## Install 
 
