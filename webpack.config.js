@@ -5,8 +5,7 @@ module.exports = {
   entry: "./index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: ["dist/NextTinaSeo.js", "dist/MetaGenerator.js"],
-    library: ["NextTinaSeo", "MetaGenerator"],
+   
     libraryTarget: "umd",
     umdNamedDefine: true,
   },
