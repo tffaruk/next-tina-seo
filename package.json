@@ -6,7 +6,7 @@
     "react-dom": "^18.2.0"
   },
   "name": "next-tina-seo-demo",
-  "version": "1.1.19",
+  "version": "1.1.20",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "devDependencies": {
