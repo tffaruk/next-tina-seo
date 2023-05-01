@@ -1,4 +1,4 @@
-import generateMetaTags from "./utils/generateMetaTags";
+import generateMetaTags from "../utils/generateMetaTags";
 
 function MetaGenerator(props) {
   const { title, description, image } = props;

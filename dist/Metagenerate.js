@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _generateMetaTags = _interopRequireDefault(require("./utils/generateMetaTags"));
+var _generateMetaTags = _interopRequireDefault(require("../utils/generateMetaTags"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 function MetaGenerator(props) {
   var title = props.title,
