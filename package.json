@@ -7,7 +7,7 @@
     "react-dom": "^18.2.0"
   },
   "name": "next-tina-seo-demo",
-  "version": "1.1.22",
+  "version": "1.1.23",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "devDependencies": {
