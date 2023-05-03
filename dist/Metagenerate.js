@@ -4,14 +4,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _generateMetaTags = _interopRequireDefault(require("../utils/generateMetaTags"));
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-function MetaGenerator(props) {
-  var title = props.title,
-    description = props.description,
-    image = props.image;
-  var metaTags = (0, _generateMetaTags["default"])(title, description, image);
-  return /*#__PURE__*/React.createElement(React.Fragment, null, metaTags);
+function MetaGenerator() {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("title", null, "title"));
 }
 var _default = MetaGenerator;
 exports["default"] = _default;
