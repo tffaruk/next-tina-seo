@@ -1,0 +1,66 @@
+import React from "react";
+// import { metaGenerator } from "../utils/meta";
+// export const metaData = metaGenerator();
+function AppMetaGenerator({
+  title,
+  meta_title,
+  meta_author,
+  meta_image,
+  description,
+  image,
+  noindex,
+  canonical,
+  base_url,
+  url_path,
+}) {
+  return (
+    <>
+      {/* title */}
+      <title>{meta_title ? meta_title : title}</title>
+
+      {/* canonical url */}
+      {canonical && <link rel="canonical" href={canonical} itemProp="url" />}
+
+      {/* noindex robots */}
+      {noindex && <meta name="robots" content="noindex,nofollow" />}
+
+      {/* meta-description */}
+      <meta name="description" content={description} />
+
+      {/* author from config.json */}
+      <meta name="author" content={meta_author} />
+
+      {/* og-title */}
+      <meta property="og:title" content={meta_title ? meta_title : title} />
+
+      {/* og-description */}
+      <meta property="og:description" content={description} />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:url"
+        content={`${base_url}/${url_path?.replace("/", "")}`}
+      />
+
+      {/* twitter-title */}
+      <meta name="twitter:title" content={meta_title ? meta_title : title} />
+
+      {/* twitter-description */}
+      <meta name="twitter:description" content={description} />
+
+      {/* og-image */}
+      <meta
+        property="og:image"
+        content={`${base_url}${image ? image : meta_image}`}
+      />
+
+      {/* twitter-image */}
+      <meta
+        name="twitter:image"
+        content={`${base_url}${image ? image : meta_image}`}
+      />
+      <meta name="twitter:card" content="summary_large_image" />
+    </>
+  );
+}
+
+export default AppMetaGenerator;

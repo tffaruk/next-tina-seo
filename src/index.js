@@ -1,5 +1,4 @@
-import NextTinaSeo from "./NextTinaSeo";
-import metaGenerator from "../utils/meta";
-import MetaGenerator from "./MetaGenerate";
+import NextTinaSeo from "./PagesMeta";
+import AppMetaGenerator from "./AppMeta";
 
-export { NextTinaSeo, metaGenerator,MetaGenerator };
+export { NextTinaSeo, AppMetaGenerator };
