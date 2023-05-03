@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 
-const NextTinaSeo = ({
+const PagesMetaGenerator = ({
   title,
   meta_title,
   meta_author,
@@ -63,4 +63,4 @@ const NextTinaSeo = ({
   );
 };
 
-export default NextTinaSeo;
+export default PagesMetaGenerator;

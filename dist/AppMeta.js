@@ -6,9 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-// import { metaGenerator } from "../utils/meta";
-// export const metaData = metaGenerator();
-function AppMetaGenerator(_ref) {
+var AppMetaGenerator = function AppMetaGenerator(_ref) {
   var title = _ref.title,
     meta_title = _ref.meta_title,
     meta_author = _ref.meta_author,
@@ -60,6 +58,6 @@ function AppMetaGenerator(_ref) {
     name: "twitter:card",
     content: "summary_large_image"
   }));
-}
+};
 var _default = AppMetaGenerator;
 exports["default"] = _default;

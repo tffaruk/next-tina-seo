@@ -7,7 +7,7 @@ exports["default"] = void 0;
 var _head = _interopRequireDefault(require("next/head"));
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-var NextTinaSeo = function NextTinaSeo(_ref) {
+var PagesMetaGenerator = function PagesMetaGenerator(_ref) {
   var title = _ref.title,
     meta_title = _ref.meta_title,
     meta_author = _ref.meta_author,
@@ -60,5 +60,5 @@ var NextTinaSeo = function NextTinaSeo(_ref) {
     content: "summary_large_image"
   }));
 };
-var _default = NextTinaSeo;
+var _default = PagesMetaGenerator;
 exports["default"] = _default;

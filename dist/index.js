@@ -9,7 +9,7 @@ Object.defineProperty(exports, "AppMetaGenerator", {
     return _AppMeta["default"];
   }
 });
-Object.defineProperty(exports, "NextTinaSeo", {
+Object.defineProperty(exports, "PagesMetaGenerator", {
   enumerable: true,
   get: function get() {
     return _PagesMeta["default"];

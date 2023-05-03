@@ -1,7 +1,5 @@
 import React from "react";
-// import { metaGenerator } from "../utils/meta";
-// export const metaData = metaGenerator();
-function AppMetaGenerator({
+const AppMetaGenerator = ({
   title,
   meta_title,
   meta_author,
@@ -12,7 +10,7 @@ function AppMetaGenerator({
   canonical,
   base_url,
   url_path,
-}) {
+}) => {
   return (
     <>
       {/* title */}
@@ -61,6 +59,6 @@ function AppMetaGenerator({
       <meta name="twitter:card" content="summary_large_image" />
     </>
   );
-}
+};
 
 export default AppMetaGenerator;
