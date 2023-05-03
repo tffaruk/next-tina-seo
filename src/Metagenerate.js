@@ -1,8 +1,4 @@
-
-
 function MetaGenerator() {
-
-
   return (
     <>
       <title>title</title>
